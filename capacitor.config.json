@@ -1,0 +1,19 @@
+{
+  "appId": "com.yeatz.brutalnotes",
+  "appName": "Brutal Notes",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "always",
+    "scheme": "App"
+  },
+  "android": {
+    "buildOptions": {
+      "keystorePath": "",
+      "keystoreAlias": ""
+    }
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}
