@@ -1,0 +1,286 @@
+---
+// Showcase section with screenshot
+---
+
+<section id="showcase" class="showcase">
+  <div class="showcase-header">
+    <div class="section-badge">
+      <span>📸</span>
+      <span>Showcase</span>
+    </div>
+    <h2 class="section-title">See It In Action</h2>
+    <p class="section-subtitle">
+      No fluff. No clutter. Just pure, unapologetic productivity.
+    </p>
+  </div>
+
+  <div class="showcase-content">
+    <div class="screenshot-container">
+      <div class="screenshot-frame">
+        <div class="screenshot-header">
+          <div class="browser-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="browser-url">brutal-notes.app</div>
+        </div>
+        <div class="screenshot-image">
+          <img
+            src="/screenshot.png"
+            alt="Brutal Notes App Screenshot"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase-features">
+      <div class="feature-highlight">
+        <div class="highlight-number">01</div>
+        <div class="highlight-content">
+          <h3 class="highlight-title">Clean Interface</h3>
+          <p class="highlight-description">
+            No distractions. Just you and your notes. Bold borders and sharp edges keep you focused.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-highlight">
+        <div class="highlight-number">02</div>
+        <div class="highlight-content">
+          <h3 class="highlight-title">Instant Access</h3>
+          <p class="highlight-description">
+            Launch instantly. No loading screens. No splash pages. Just open and start writing.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-highlight">
+        <div class="highlight-number">03</div>
+        <div class="highlight-content">
+          <h3 class="highlight-title">Works Everywhere</h3>
+          <p class="highlight-description">
+            Desktop, tablet, mobile. Online or offline. Your notes follow you everywhere.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .showcase {
+    padding: 100px 64px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: var(--white);
+  }
+
+  .showcase-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--orange);
+    color: var(--white);
+    padding: 10px 20px;
+    border: 3px solid var(--black);
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    font-size: 56px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: var(--black);
+    margin-bottom: 16px;
+  }
+
+  .section-subtitle {
+    font-size: 20px;
+    color: var(--black);
+    opacity: 0.7;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .showcase-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .screenshot-container {
+    position: relative;
+  }
+
+  .screenshot-frame {
+    background: var(--cream);
+    border: 4px solid var(--black);
+    box-shadow: 16px 16px 0 var(--black);
+    overflow: hidden;
+  }
+
+  .screenshot-header {
+    background: var(--black);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 4px solid var(--black);
+  }
+
+  .browser-dots {
+    display: flex;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px solid var(--black);
+  }
+
+  .dot.red {
+    background: var(--orange);
+  }
+
+  .dot.yellow {
+    background: var(--yellow);
+  }
+
+  .dot.green {
+    background: var(--cream);
+  }
+
+  .browser-url {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .screenshot-image {
+    background: var(--cream);
+    padding: 32px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .screenshot-image img {
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--black);
+  }
+
+  .showcase-features {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .feature-highlight {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 24px;
+    background: var(--cream);
+    border: 3px solid var(--black);
+    transition: all 0.2s ease;
+  }
+
+  .feature-highlight:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 var(--black);
+    background: var(--yellow);
+  }
+
+  .highlight-number {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--orange);
+    line-height: 1;
+    min-width: 60px;
+  }
+
+  .highlight-content {
+    flex: 1;
+  }
+
+  .highlight-title {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: var(--black);
+  }
+
+  .highlight-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--black);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 1024px) {
+    .showcase-content {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    .screenshot-frame {
+      box-shadow: 12px 12px 0 var(--black);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .showcase {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 36px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+    }
+
+    .screenshot-frame {
+      box-shadow: 8px 8px 0 var(--black);
+    }
+
+    .screenshot-image {
+      padding: 20px;
+      min-height: 300px;
+    }
+
+    .feature-highlight {
+      padding: 20px;
+    }
+
+    .highlight-number {
+      font-size: 36px;
+      min-width: 50px;
+    }
+
+    .highlight-title {
+      font-size: 18px;
+    }
+  }
+</style>

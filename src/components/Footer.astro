@@ -1,0 +1,50 @@
+---
+// Footer component
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <p class="footer-text">
+      Made with brutal honesty by{" "}
+      <a href="https://github.com/me-yeatz" target="_blank" rel="noopener noreferrer">
+        @me-yeatz
+      </a>
+      {" "}| Open Source on{" "}
+      <a href="https://github.com/me-yeatz/brutalist-note-astro" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--black);
+    border-top: 4px solid var(--orange);
+    padding: 40px 32px;
+    margin-top: 80px;
+  }
+
+  .footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-text {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .footer-text a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s ease;
+  }
+
+  .footer-text a:hover {
+    color: var(--orange);
+  }
+</style>

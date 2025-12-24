@@ -1,0 +1,116 @@
+---
+// Navigation component
+---
+
+<nav class="nav">
+  <div class="nav-brand">
+    <div class="nav-logo">📝</div>
+    <span class="nav-title">Brutal Notes</span>
+  </div>
+  <div class="nav-links">
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#showcase" class="nav-link">Showcase</a>
+    <a href="#platforms" class="nav-link">Platforms</a>
+    <a href="/app" class="nav-cta">Launch App</a>
+  </div>
+</nav>
+
+<style>
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--black);
+    border-bottom: 4px solid var(--orange);
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-logo {
+    width: 48px;
+    height: 48px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--yellow);
+  }
+
+  .nav-cta {
+    background: var(--orange);
+    color: var(--white);
+    border: 3px solid var(--orange);
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+
+  .nav-cta:hover {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--black);
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 var(--black);
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+      padding: 12px 16px;
+    }
+
+    .nav-links {
+      gap: 12px;
+    }
+
+    .nav-link {
+      display: none;
+    }
+
+    .nav-cta {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+</style>

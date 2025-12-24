@@ -1,0 +1,156 @@
+---
+// Features section
+const features = [
+  {
+    icon: "📝",
+    title: "Simple & Fast",
+    description: "No clutter. No distractions. Just you and your notes. Works offline, syncs everywhere."
+  },
+  {
+    icon: "🎨",
+    title: "Neo-Brutalist Design",
+    description: "Bold, unapologetic aesthetics. Black borders. Sharp edges. Pure functionality."
+  },
+  {
+    icon: "💾",
+    title: "Auto-Save",
+    description: "Never lose your work. Every keystroke is saved automatically to local storage."
+  },
+  {
+    icon: "🔍",
+    title: "Instant Search",
+    description: "Find anything instantly. Search through all your notes in milliseconds."
+  },
+  {
+    icon: "📱",
+    title: "Progressive Web App",
+    description: "Install on any device. Works like a native app. No app store required."
+  },
+  {
+    icon: "🔒",
+    title: "Privacy First",
+    description: "Your notes stay on your device. No tracking. No analytics. No BS."
+  }
+];
+---
+
+<section id="features" class="features">
+  <div class="features-header">
+    <div class="section-badge">
+      <span>⚡</span>
+      <span>Features</span>
+    </div>
+    <h2 class="section-title">Built for Productivity</h2>
+  </div>
+
+  <div class="features-grid">
+    {features.map((feature) => (
+      <div class="feature-card">
+        <div class="feature-icon">{feature.icon}</div>
+        <h3 class="feature-title">{feature.title}</h3>
+        <p class="feature-description">{feature.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .features {
+    padding: 80px 64px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .features-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--yellow);
+    color: var(--black);
+    padding: 10px 20px;
+    border: 3px solid var(--black);
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    font-size: 56px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: var(--black);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+  }
+
+  .feature-card {
+    background: var(--white);
+    border: 4px solid var(--black);
+    padding: 32px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .feature-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 var(--black);
+    background: var(--orange);
+  }
+
+  .feature-card:hover .feature-title {
+    color: var(--white);
+  }
+
+  .feature-card:hover .feature-description {
+    color: var(--white);
+  }
+
+  .feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--black);
+    transition: color 0.2s ease;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--black);
+    opacity: 0.8;
+    transition: color 0.2s ease;
+  }
+
+  @media (max-width: 768px) {
+    .features {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 36px;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+</style>
