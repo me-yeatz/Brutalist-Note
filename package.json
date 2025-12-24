@@ -1,5 +1,5 @@
 {
-  "name": "brutal-notes",
+  "name": "brutalist-note",
   "version": "1.0.0",
   "description": "A no-nonsense, Neo-Brutalist note-taking Progressive Web App",
   "main": "index.html",
@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/me-yeatz/brutal-notes.git"
+    "url": "https://github.com/me-yeatz/Brutalist-Note.git"
   },
   "bugs": {
-    "url": "https://github.com/me-yeatz/brutal-notes/issues"
+    "url": "https://github.com/me-yeatz/Brutalist-Note/issues"
   },
-  "homepage": "https://github.com/me-yeatz/brutal-notes#readme",
+  "homepage": "https://github.com/me-yeatz/Brutalist-Note#readme",
   "devDependencies": {
     "@capacitor/cli": "^5.0.0",
     "@capacitor/core": "^5.0.0",
