@@ -12,6 +12,8 @@ if (!fs.existsSync(destDir)) {
 // Files to copy directly
 const filesToCopy = [
     'index.html',
+    'app.html',
+    'landing.html',
     'styles.css',
     'script.js',
     'manifest.json',
